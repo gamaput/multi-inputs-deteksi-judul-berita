@@ -1,0 +1,26 @@
+{% extends "Layout.html" %}
+{% block title %}Fake News Classification - Results{% endblock %}
+{% block body %}
+
+<style>
+.news-description{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    text-align:justify
+}
+</style>
+
+<div class="container">
+    <!-- Results of News -->
+    <h2>Results : {{prediction}}</h2>
+    <hr>
+    <!-- News given by user -->
+    <h2>News given:</h2> 
+    <div class="news-description">
+        {{news}}
+    </div>
+</div>
+
+{% endblock %}

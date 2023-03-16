@@ -1,0 +1,18 @@
+{% extends "Layout.html" %}
+{% block title %}Fake News Classification{% endblock %}
+{% block body %}
+
+<div class="container">
+    <h2>Fake News Classification</h2>
+    <hr>
+    <form action="/predict" method="POST">
+        <div class="mb-3">
+            <label for="text" class="form-label">Enter News below to check wheather it is Real or Fake:</label>
+            <textarea class="form-control" id="text" name="text" rows="3" style="height: 303px;"
+                placeholder="Enter your text here..." required></textarea>
+        </div>
+        <button type="submit" class="btn btn-outline-dark">Submit</button>
+    </form>
+</div>
+
+{% endblock %}

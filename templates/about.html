@@ -1,0 +1,92 @@
+{% extends "Layout.html" %}
+{% block title %}Fake News Classification - About{% endblock %}
+{% block body %}
+
+{% block style %} 
+<style>
+    .images-centering{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .image-maintain{
+      width: 60%;
+    }
+</style>
+
+{% endblock %}
+
+<div class="container">
+
+    <div class="row">
+      <div class="col-lg-4">
+        <img class="images-centering image-maintain" src="/static/images/brain-motivation.png" alt="motivation">
+
+        <h2>Motivation</h2>
+        <p>Fake news can have a serious negative impact on individuals and society. Thus, fake news detection is made to stop the rumours that are being spread on social platforms </p>
+      </div><!-- /.col-lg-4 -->
+      <div class="col-lg-4">
+        <img class="images-centering image-maintain" src="/static/images/quick-prediction.png" alt="quick-prediction">
+
+        <h2>Quick Prediction</h2>
+        <p>Used light ML model that can load within no time without compromising on the accuracy of the prediction. Light models quickly load which helps in better response of the page</p>
+      </div><!-- /.col-lg-4 -->
+      <div class="col-lg-4">
+        <img class="images-centering image-maintain my-4" src="/static/images/accurate-images.jpg" alt="highly-accurate">
+        <h2>Highly Accurate</h2>
+        <p>Though this app provides high speed and accuracy has not been compromised. in Deep learning using Word Embedding and LSTM  with Tensorflow</p>
+      </div><!-- /.col-lg-4 -->
+    </div><!-- /.row -->
+
+
+    <!-- START THE FEATURETTES -->
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-7">
+      <h2 class="featurette-heading">What is news? </h2>
+        <p class="lead">
+            When a dog bites a man that is not news, but when a man bites a dog that is news.
+            <i>- Charles Anderson Dana, American journalist, 1819-1897</i></p>
+        <p class="lead">Well, news is anything that's interesting, that relates to what's happening in the world, what's happening in areas of the culture that would be of interest to your audience.
+        <i>- Kurt Loder, American journalist, b. 1945</i></p>
+      </div>
+      <div class="col-md-5">
+        <img src="/static/images/news_img.jpg" alt="What is news?">
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-7 order-md-2">
+        <h2 class="featurette-heading">What is Fake News?</h2>
+        <p class="lead">The term fake news means articles, reports, images, and videos that are shared to purposefully spread misinformation i.e. information that is factually incorrect. These news items may appear authentic at first and attempt to attract attention, shock, or shape opinions.While some pieces of fake news are relatively harmless, others can cause significant damage because they foster anti-democratic thinking. Experts anticipate that fake news in combination with social bots have had a major influence on world</p>
+      </div>
+      <div class="col-md-5 order-md-1 images-centering">
+        <img src="/static/images/fakenews-image.jpg" alt="Fake news">
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-7">
+        <h2 class="featurette-heading">Examples of Fake News:</h2>
+        
+        <p class="lead">
+            <i>AIDS conspiracy:</i> Even before the digitalization of information, blind media trust was used to spread wrongful information. On behalf of secret services by the GDR and Soviet Union, West German media in the 1980s spread the news that the AIDS virus had been created by US secret service CIA. This is called a disinformation campaign. 
+            <br>
+            <i>The Bitcoin scam:</i> As cryptocurrencies gained popularity in recent years, the number of scams and fraudulent practices have increased. Alleged bitcoin trading platforms advertised their services using fictitious reviews by famous people to grow public trust.The reviews suggested high gains to potential investors. 
+        </p>
+      </div>
+      <div class="col-md-5 images-centering">
+        <img class="image-maintain" src="/static/images/example-fake-news.jpg" alt="Example of Fake news">
+      </div>
+    </div>
+    <!-- /END THE FEATURETTES -->
+
+  </div>
+
+{% endblock %}
